@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Publicar Producto | AeroScale</title>
+
+    <!-- Hoja de estilos -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- =======================================================
+         ENCABEZADO
+    ======================================================== -->
+    <header>
+
+        <div class="logo">
+            <h1>AeroScale</h1>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="publicar.html">Publicar</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <!-- =======================================================
+         CONTENIDO PRINCIPAL
+    ======================================================== -->
+    <main>
+
+        <section class="formulario-publicacion">
+
+            <h2>Publicar un nuevo modelo de avión</h2>
+
+            <p>
+                Complete los siguientes datos para simular la creación
+                de una nueva publicación.
+            </p>
+
+            <!-- ===================================================
+                 FORMULARIO
+            ==================================================== -->
+            <form id="formPublicacion">
+
+                <!-- ID -->
+                <label for="idProducto">
+                    ID del Producto
+                </label>
+
+                <input
+                    type="number"
+                    id="idProducto"
+                    required
+                >
+
+                <!-- Modelo -->
+                <label for="modeloAvion">
+                    Modelo del avión
+                </label>
+
+                <input
+                    type="text"
+                    id="modeloAvion"
+                    placeholder="Ej: Boeing 777-300ER"
+                    required
+                >
+
+                <!-- Marca -->
+                <label for="marca">
+                    Marca
+                </label>
+
+                <input
+                    type="text"
+                    id="marca"
+                    placeholder="Ej: Gemini Jets"
+                    required
+                >
+
+                <!-- Escala -->
+                <label for="escala">
+                    Escala
+                </label>
+
+                <select id="escala" required>
+
+                    <option value="">Seleccione una escala</option>
+
+                    <option>1:72</option>
+                    <option>1:144</option>
+                    <option>1:200</option>
+                    <option>1:400</option>
+                    <option>1:500</option>
+
+                </select>
+
+                <!-- Estado -->
+                <label for="estado">
+                    Estado
+                </label>
+
+                <select id="estado" required>
+
+                    <option value="">Seleccione el estado</option>
+
+                    <option>Nuevo</option>
+                    <option>Usado</option>
+
+                </select>
+
+                <!-- Precio -->
+                <label for="precio">
+                    Precio
+                </label>
+
+                <input
+                    type="number"
+                    id="precio"
+                    placeholder="Ej: 120000"
+                    required
+                >
+
+                <!-- Tipo de operación -->
+                <label for="tipoOperacion">
+                    Tipo de operación
+                </label>
+
+                <select id="tipoOperacion" required>
+
+                    <option value="">Seleccione una opción</option>
+
+                    <option>Venta</option>
+                    <option>Intercambio</option>
+
+                </select>
+
+                <!-- Descripción -->
+                <label for="descripcion">
+                    Descripción
+                </label>
+
+                <textarea
+                    id="descripcion"
+                    rows="6"
+                    placeholder="Describa el estado del modelo, accesorios incluidos, caja original, etc."
+                    required
+                ></textarea>
+
+                <!-- Botones -->
+                <div class="botones-formulario">
+
+                    <button type="submit">
+                        Publicar
+                    </button>
+
+                    <button
+                        type="button"
+                        onclick="window.location.href='index.html'"
+                    >
+                        Cancelar
+                    </button>
+
+                </div>
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <!-- =======================================================
+         PIE DE PÁGINA
+    ======================================================== -->
+    <footer>
+
+        <p>© 2026 AeroScale</p>
+
+        <p>Proyecto universitario - Ingeniería en Sistemas</p>
+
+    </footer>
+
+    <!-- Archivo JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>

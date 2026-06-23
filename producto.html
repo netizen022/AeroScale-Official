@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Detalle del Producto | AeroScale</title>
+
+    <!-- Hoja de estilos principal -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- =======================================================
+         ENCABEZADO
+    ======================================================== -->
+    <header>
+
+        <div class="logo">
+            <h1>AeroScale</h1>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="publicar.html">Publicar</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <!-- =======================================================
+         CONTENIDO PRINCIPAL
+    ======================================================== -->
+    <main>
+
+        <!--
+            Este contenedor será completado dinámicamente
+            desde script.js según el id recibido por la URL.
+        -->
+        <section id="detalleProducto" class="detalle-producto">
+
+            <!-- Imagen principal -->
+            <div class="detalle-imagen">
+                <img
+                    id="imagenProducto"
+                    src="assets/productos/boeing747.jpg"
+                    alt="Modelo de avión"
+                >
+            </div>
+
+            <!-- Información -->
+            <div class="detalle-info">
+
+                <h2 id="modeloProducto">
+                    Cargando producto...
+                </h2>
+
+                <p>
+                    <strong>Marca:</strong>
+                    <span id="marcaProducto"></span>
+                </p>
+
+                <p>
+                    <strong>Escala:</strong>
+                    <span id="escalaProducto"></span>
+                </p>
+
+                <p>
+                    <strong>Estado:</strong>
+                    <span id="estadoProducto"></span>
+                </p>
+
+                <p>
+                    <strong>Precio:</strong>
+                    $
+                    <span id="precioProducto"></span>
+                </p>
+
+                <p>
+                    <strong>Tipo de operación:</strong>
+                    <span id="operacionProducto"></span>
+                </p>
+
+                <h3>Descripción</h3>
+
+                <p id="descripcionProducto">
+                    Cargando descripción...
+                </p>
+
+                <!-- Botones -->
+                <div class="botones-detalle">
+
+                    <button id="btnContactar">
+                        Contactar vendedor
+                    </button>
+
+                    <button onclick="window.location.href='index.html'">
+                        Volver
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- =======================================================
+         PIE DE PÁGINA
+    ======================================================== -->
+    <footer>
+
+        <p>© 2026 AeroScale</p>
+
+        <p>Proyecto universitario - Ingeniería en Sistemas</p>
+
+    </footer>
+
+    <!-- Archivo JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AeroScale</title>
+
+    <!-- Hoja de estilos principal -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- =======================================================
+         ENCABEZADO
+         Contiene el logo, el nombre de la página y la navegación.
+    ======================================================== -->
+    <header>
+
+        <div class="logo">
+            <!-- Más adelante se reemplazará por una imagen -->
+            <img src="assets/logo/logo2.jpg" alt="Logo AeroScale">
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="publicar.html">Publicar</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <!-- =======================================================
+         CONTENIDO PRINCIPAL
+    ======================================================== -->
+    <main>
+
+        <!-- =============================
+             SECCIÓN HERO
+        ============================== -->
+        <section class="hero">
+
+            <h2>Marketplace de Modelos de Aviones a Escala</h2>
+
+            <p>
+                Compra, vende e intercambia modelos de colección
+                entre apasionados de la aviación.
+            </p>
+
+        </section>
+
+        <!-- =============================
+             BUSCADOR
+        ============================== -->
+        <section class="busqueda">
+
+            <h2>Buscar modelos</h2>
+
+            <input
+                type="text"
+                id="buscador"
+                placeholder="Buscar por modelo de avión..."
+            >
+
+        </section>
+
+        <!-- =============================
+             FILTROS
+        ============================== -->
+        <section class="filtros">
+
+            <h2>Filtros</h2>
+
+            <!-- Filtro por marca -->
+            <select id="filtroMarca">
+                <option value="">Marca</option>
+            </select>
+
+            <!-- Filtro por escala -->
+            <select id="filtroEscala">
+                <option value="">Escala</option>
+            </select>
+
+            <!-- Filtro por estado -->
+            <select id="filtroEstado">
+                <option value="">Estado</option>
+            </select>
+
+            <!-- Filtro por operación -->
+            <select id="filtroOperacion">
+                <option value="">Tipo de operación</option>
+            </select>
+
+        </section>
+
+        <!-- =============================
+             LISTA DE PRODUCTOS
+             JavaScript agregará aquí las tarjetas.
+        ============================== -->
+        <section class="productos">
+
+            <h2>Publicaciones</h2>
+
+            <div id="contenedorProductos">
+
+                <!--
+                    Las tarjetas de productos se crearán
+                    dinámicamente desde script.js
+                -->
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- =======================================================
+         PIE DE PÁGINA
+    ======================================================== -->
+    <footer>
+
+        <p>
+            © 2026 AeroScale
+        </p>
+
+        <p>
+            Proyecto universitario - Ingeniería en Sistemas
+        </p>
+
+    </footer>
+
+    <!-- Archivo JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
